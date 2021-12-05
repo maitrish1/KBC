@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KBC</title>
+  </head>
+  <body>
+      <h1>open console to see if you're answers are correct</h1>
+    <script>
+
+        
+      var kbc = {
+        'current_question_no': 0,
+        print_question: function(){
+                var q1=prompt(kbc.question_list[0]+kbc.options);
+                var q2=prompt(kbc.question_list[1]+kbc.options);
+                var q3=prompt(kbc.question_list[2]+kbc.options);
+                var q4=prompt(kbc.question_list[3]+kbc.options);
+
+                if(q1 == kbc.correct_ans[0]){
+                  console.log("correct answer");
+                }else{
+                  console.log("incorrect answer");
+                }
+                if(q2 == kbc.correct_ans[1]){
+                  console.log("correct answer");
+                }else{
+                  console.log("incorrect answer");
+                }
+                if(q3 == kbc.correct_ans[2]){
+                  console.log("correct answer");
+                }else{
+                  console.log("incorrect answer");
+                }
+                if(q4 == kbc.correct_ans[3]){
+                  console.log("correct answer");
+                }else{
+                  console.log("incorrect answer");
+                }
+            
+        },
+        
+        'question_list': ["Capital of india is? :","Father of the nation is?","Where are we studying :","MERN stack is used for?"],
+
+        'correct_ans': ["New Delhi","Mahatma Gandhi","Geekster","Web Development"],
+
+        'options':["1. New Delhi","2. Mahatma Gandhi","3. Geekster","4. Web Development"],
+
+      };
+
+      var list = kbc.question_list;
+      console.log(list);
+      var list1 = kbc.print_question();
+      console.log(list1);
+    </script>
+  </body>
+</html>
